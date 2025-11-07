@@ -1,0 +1,36 @@
+# 🚫 Node modules
+node_modules/
+
+# 🚫 Environment files
+.env
+
+# 🚫 Local uploads and processed videos
+public/Videos/
+tmp_uploads/
+
+# 🚫 Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🚫 OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 🚫 Build or cache files
+dist/
+.cache/
+*.tmp
+
+# 🚫 Database dumps or backups
+*.sql
+*.bak
+*.db
+
+# 🚫 Misc
+.env.local
+.env.production

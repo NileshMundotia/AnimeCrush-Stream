@@ -1,0 +1,32 @@
+<%- include('partials/header', { cssFile: '/CSS/Common/register.css' }) %>
+
+<div class="signup_box">
+    <h2>Sign Up</h2>
+
+    <form action="/register" method="POST">
+
+        <!-- Email -->
+        <div class="form-group">
+            <input type="email" name="email" required>
+            <label for="email">Email</label>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <input type="password" name="password" required>
+            <label for="password">Password</label>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <input id="btn" type="submit" value="Sign Up">
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Or sign up with:</p>
+        
+        <a href="/auth/google" id="google-signin-btn" class="google-btn">
+            <img src="../Images/7123025_logo_google_g_icon.svg" alt="Google Logo" width="20" /> Sign up with Google
+        </a>
+    </form>
+</div>
+
+</body>

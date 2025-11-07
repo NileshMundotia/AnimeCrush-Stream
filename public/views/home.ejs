@@ -1,0 +1,166 @@
+<%- include('partials/header', { cssFile: '/CSS/Common/card_style.css' }) %>
+
+<div class="main-content">
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="featured slide" data-bg="Images/bgg (2).jpg">
+      <div class="info">
+        <h1>YOUR NAME</h1>
+        <div class="details">
+          <span>HD</span>
+          <span>DUB</span>
+          <span>2023</span>
+        </div>
+        <p>Kimi no Nawa.</p>
+        <a class="play-button" href="/watch/Your_Name">WATCH NOW</a>
+      </div>
+      <div class="image">
+        <img src="Images/bgg (2) (1).jpg" alt="Your Name" />
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="featured slide" data-bg="../Images/43 (1).jpg">
+      <div class="info">
+        <h1>ONE PIECE</h1>
+        <div class="details">
+          <span>HD</span>
+          <span>DUB</span>
+          <span>2024</span>
+        </div>
+        <p>One Piece</p>
+        <a class="play-button" href="/watch/One_Piece">WATCH NOW</a>
+      </div>
+      <div class="image">
+        <img src="../Images/43 (2).jpg" alt="One Piece" />
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="featured slide" data-bg="../Images/bgg (3).jpg">
+      <div class="info">
+        <h1>POKEMON</h1>
+        <div class="details">
+          <span>HD</span>
+          <span>DUB</span>
+          <span>1980</span>
+        </div>
+        <p>Pokemon XYZ</p>
+        <a class="play-button" href="/watch/Pokemon">WATCH NOW</a>
+      </div>
+      <div class="image">
+        <img src="../Images/bgg (3) (1).jpg" alt="Pokemon" />
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</div>
+
+<script src="Script/Client/herosection.js"></script>
+
+<div class="separator-block">
+  <div class="heading">
+    <h2>Welcome to ANIME Crush</h2>
+    <p>Watch your favorite Anime and relive your Life!</p>
+    <div class="btns">
+      <a href="/anime" class="btn">Watch Now</a>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<div class="container1">
+  <h2>TRENDING ANIME</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Card 1 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/1.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">DEMON SLAYER</h5>
+            <a href="/watch/Demon_Slayer" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/2.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">BLACK CLOVER</h5>
+            <a href="/watch/Black_Clover" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/3.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">BLUE LOCK</h5>
+            <a href="/watch/Blue_Lock" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/4.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">MY HERO ACADEMIA</h5>
+            <a href="/watch/My_Hero_Academia" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/5.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">ONE PIECE</h5>
+            <a href="/watch/One_Piece" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/6.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">JUJUTSU KAISEN</h5>
+            <a href="/watch/Jujutsu_Kaisen" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/7.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">BLEACH</h5>
+            <a href="/watch/Bleach" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="swiper-slide">
+        <div class="card" style="background-image: url('Images/11.jpg');">
+          <div class="card-body">
+            <h5 class="card-title">SPY X FAMILY</h5>
+            <a href="/watch/SPY_X_FAMILY" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,46 @@
+<%- include('partials/header', { cssFile: '/CSS/Common/video_playback.css' }) %>
+  <main>
+    <div class="container">
+      <!-- Sidebar for Episode List -->
+      <aside class="episode-list">
+        <h2>List of episodes:</h2>
+        <ul>
+          <li><button>Episode 1</button></li>
+          <li><button>Episode 2</button></li>
+          <li><button>Episode 3</button></li>
+          <li><button>Episode 4</button></li>
+          <!-- Add more episodes as needed -->
+        </ul>
+      </aside>
+
+      <!-- Main Video Section -->
+      <section class="video-section">
+        <iframe width="800" height="900" src="https://www.youtube.com/embed/TByW5-HDYTA?si=nJoV0C1sc6fdqlmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="controls">
+          <label><input type="checkbox" checked> Light</label>
+          <label><input type="checkbox" checked> Auto Play</label>
+          <label><input type="checkbox" checked> Auto Next</label>
+        </div>
+      </section>
+
+      <!-- Anime Details -->
+      <section class="anime-details">
+        <h1>One Punch Man</h1>
+        <p>
+          One-Punch Man is a Japanese superhero manga series created by One. It tells the story of Saitama, an independent superhero who, because he can defeat any opponent with a single punch due to having ...
+         <a href="https://myanimelist.net/anime/30276/One_Punch_Man" style="color: #13d329  ;">More</a>
+        </p>
+        <button>View Details</button>
+
+        <div class="rating">
+          <h3>9.8</h3>
+          <p>What do you think about this anime?</p>
+          <button>Boring</button>
+          <button>Great</button>
+          <button>Amazing</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../Script/Client/video_playback.js"></script>
+<%- include('partials/footer') %>

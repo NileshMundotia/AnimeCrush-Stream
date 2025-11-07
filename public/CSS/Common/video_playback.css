@@ -1,0 +1,143 @@
+ .container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  /* Sidebar */
+  .episode-list {
+    width: 15%;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Change to border-top */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    color:#afc7cf;   
+  }
+  .episode-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  .episode-list button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: rgba(27, 25, 25, 0.712);
+    border-top: 2px solid rgba(5, 5, 5, 0.003); /* Change to border-top */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .episode-list button:hover {
+    background-color: rgba(41, 218, 64, 0.567);
+  }
+  
+  /* Video Section */
+  .video-section {
+    flex: 2;
+    padding: 10px;
+    height: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+  .controls {
+    margin-top: 10px;
+    color: #afc7cf;
+  }
+  .controls label {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  /* Anime Details */
+  .anime-details {
+    width: 25%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Change to border-top */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: bisque;
+  }
+  .anime-details h1 {
+    font-size: 1.5em;
+    color: #afc7cf ;
+  }
+  .anime-details button {
+    background-color: #3aabc4;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .anime-details button:hover {
+    background-color: #ffaa00;
+  }
+  .rating {
+    color: #baadad;
+    margin-top: 20px;
+  }
+  .rating button {
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Change to border-top */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .rating button:hover {
+    background-color: #1ad029;
+  }
+
+
+.broadcast-container {
+  text-align: center;
+  padding: 40px;
+
+  color: white;
+  min-height: 100vh;
+}
+
+.broadcast-container form {
+  display: inline-block;
+  background-color:rgba(255, 255, 255, 0.2);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.broadcast-container input,
+.broadcast-container select {
+  display: block;
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: white;
+}
+
+.broadcast-container button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.broadcast-container button:hover {
+  background-color: #ff3d3d;
+}
+
+  

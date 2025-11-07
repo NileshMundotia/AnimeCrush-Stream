@@ -1,0 +1,41 @@
+<%- include('partials/header', { cssFile }) %>
+
+<div class="not-available-container">
+  <h1><%= title %></h1>
+  <p>😢 Sorry, this anime’s video is not available yet.</p>
+  <a href="/" class="btn">Go Back Home</a>
+</div>
+
+<style>
+.not-available-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom right, #121212, #1e1e1e);
+}
+.not-available-container h1 {
+  font-size: 2rem;
+  color: #ff4747;
+}
+.not-available-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.not-available-container .btn {
+  background-color: #ff4747;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.not-available-container .btn:hover {
+  background-color: #ff7070;
+}
+</style>
+
+<%- include('partials/footer') %>

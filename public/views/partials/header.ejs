@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME CRUSH</title>
+    <link rel="stylesheet" href="../../CSS/Common/style.css">
+    <link rel="stylesheet" href="../../CSS/Common/herosection.css">
+    <% if (cssFile) { %>
+        <link rel="stylesheet" href="<%= cssFile %>">
+    <% } %>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+    <link href="https://vjs.zencdn.net/8.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://vjs.zencdn.net/8.0/video.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">ANIME CRUSH</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            
+            <a href="/anime"><i class="fas fa-search"></i></a>
+            <a href="/">HOME</a>
+            <% if (user) { %>
+                <!-- If the user is authenticated, show the Logout button -->
+                <a href="/logout">LOGOUT</a>
+            <% } else { %>
+                <!-- If the user is not authenticated, show Login and Register buttons -->
+                <a href="/login">LOGIN</a>
+                <a href="/register">SIGN UP</a>
+            <% } %>
+        </nav>
+    </header>

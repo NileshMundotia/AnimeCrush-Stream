@@ -1,0 +1,97 @@
+.card {
+    border: none;
+    border-radius: 15px; /* Rounds the corners */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+    background: rgba(255, 255, 255, 0.1); /* Transparent background for glassmorphism effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    color: white; /* Text color */
+    height: 350px; /* Fixed height */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: flex-end; /* Align content to the bottom */
+    padding: 20px; /* Inner padding */
+    margin: 20px; /* Margin around the card */
+    text-align: center; /* Center text */
+    background-size: cover; /* Cover background image */
+    background-position: center; /* Center background image */
+}
+
+.card-body {
+    flex: 0 0 auto; /* Prevent the card body from growing */
+}
+
+.card-title {
+    font-size: 20px; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.btn {
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    background-color: #0056b3; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #13d329; /* Darker button color on hover */
+}
+
+
+.separator-block {
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+    padding: 40px; /* Add padding around the content */
+    text-align: center; /* Center align the text */
+    backdrop-filter: blur(5px); /* Blur effect */
+    color: white; /* Text color */
+    margin-top: 40px; /* Add space specifically below the header */
+    margin-bottom: 40px; /* Add space below the separator block */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.heading h2 {
+    font-size: 24px; /* Size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.heading p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.btns .btn {
+    margin: 0 10px; /* Space between buttons */
+}
+
+.container1 {
+    width: 100%;
+    margin-top: 0px; /* Space below header */
+    margin-bottom: 100px; /* Space before footer */
+    padding: 80px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff; /* Text color */
+}
+.swiper {
+    width: 100%;
+    padding: 40px 0;
+}
+.card {
+    border: none;                    /* No border */
+    border-radius: 15px;            /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+    margin-bottom: 30px;            /* Space between cards */
+    overflow: hidden;                /* Ensures child elements respect the border radius */
+}
+
+.card:hover {
+    transform: scale(1.05);          /* Scale effect on hover */
+}
+
+.card-img-top {
+    width: 100%;                     /* Full width for the image */
+    height: 200px;                   /* Fixed height */
+    object-fit: cover;               /* Cover the area, maintaining aspect ratio */
+}

@@ -1,0 +1,32 @@
+<%- include('partials/header', { cssFile: '/CSS/Common/login.css' }) %>
+
+<div class="login_box">
+    <h2>Login</h2>
+
+    <form action="/login" method="POST">
+
+        <!-- Username -->
+        <div class="form-group">
+            <input type="text" id="username" name="username" required>
+            <label for="username">Email</label>
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <input type="password" id="password" name="password" required>
+            <label for="password">Password</label>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <input id="btn" type="submit" value="Login">
+
+        <p>New User? <a href="/register">Register here</a></p>
+        <p>Or login with:</p>
+        
+        <a href="/auth/google" id="google-signin-btn" class="google-btn">
+            <img src="/Images/7123025_logo_google_g_icon.svg" alt="Google Logo" width="20" /> Sign in with Google
+        </a>
+    </form>
+</div>
+</body>

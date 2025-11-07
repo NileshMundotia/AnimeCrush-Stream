@@ -1,0 +1,23 @@
+<%- include('partials/header', { cssFile: '/CSS/Common/video_playback.css' }) %>
+
+<div class="broadcast-container">
+  <h2>📡 Broadcast a New Anime Video</h2>
+
+ <form
+  action="/broadcast"
+  method="POST"
+  enctype="multipart/form-data"
+  class="broadcast-form"
+>
+  <label for="animeTitle">Anime Title:</label>
+  <input type="text" name="animeTitle" id="animeTitle" placeholder="e.g. Naruto" required />
+
+  <label for="video">Select Video:</label>
+  <input type="file" name="video" id="video" accept="video/*" required />
+
+  <button type="submit">Start Broadcast</button>
+</form>
+
+</div>
+
+<%- include('partials/footer') %>
